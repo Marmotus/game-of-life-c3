@@ -38,9 +38,6 @@ macro void draw(char[][] board)
 
     rl::clear_background({0, 0, 0, 255});
 
-    float board_width_to_height_ratio = (float)(AREA_X / AREA_Y);
-    float screen_width_to_height_ratio = (float)(rl::get_render_width() / rl::get_render_height());
-
     int dot_size = rl::get_render_width() <= rl::get_render_height() ? (rl::get_render_width() / AREA_X) - 1 : (rl::get_render_height() / AREA_Y) - 1;
 
     for (int y = 0; y < board.len; y++)
