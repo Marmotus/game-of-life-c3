@@ -14,7 +14,7 @@ fn int main(String[] args)
     char[][] next_board = {[0..AREA_Y - 1] = {[0..AREA_X - 1] = 0}};
 
     rl::set_config_flags(rl::ConfigFlag.WINDOW_RESIZABLE);
-	rl::init_window(1200, 700, "Game of Life");
+    rl::init_window(1200, 700, "Game of Life");
 
     io::printfn("Board len: %d", board.len);
 
